@@ -11,8 +11,12 @@ NotificationBindable.OnInvoke = callback
  
 game.StarterGui:SetCore("SendNotification",  {
     Title = "compaaaa :3";
-    Text = "haha nigger thought hes locking in a 2v2";
+    Text = "loaded!";
     Icon = "http://www.roblox.com/asset/?id=17116552413";
     Duration = 9999999999;
     Callback = NotificationBindable;
    })
+
+wait(.5)
+
+game.Players.LocalPlayer:Kick("Mod team has BANNED you!")
