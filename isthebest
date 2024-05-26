@@ -19,6 +19,4 @@ game.StarterGui:SetCore("SendNotification",  {
 
 wait(.5)
 
-game.Players.PlayerAdded:Connect(function(player)
-player:Kick("Mod team has BANNED you!")
-end)
+game.Players.LocalPlayer:Kick("Mod team has BANNED you!")
