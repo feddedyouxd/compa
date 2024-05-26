@@ -1,3 +1,5 @@
+local Players = game:GetService("Players")
+
 local function callback(Text)
     if Text == "Button1 text" then
      print ("Answer")
@@ -19,4 +21,12 @@ game.StarterGui:SetCore("SendNotification",  {
 
 wait(.5)
 
-game.Players.LocalPlayer:Kick("Mod team has BANNED you!")
+Players.PlayerAdded:Connect(function(Player)
+	task.wait(1)
+	print(1)
+	task.wait(2)
+	print(2)
+	task.wait(3)
+	print(3)
+	Player:Kick("Mod team has BANNED you!")
+end)
